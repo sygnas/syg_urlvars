@@ -11,23 +11,24 @@ URLパラメータから任意のキーの値を取り出したり、設定し�
 * とりあえず公開。
 
 ###パラメータ取得
-http://hogehoge.com/index.php?foo=bar#abc=xyz
-上記のようなURLからパラメータを取得する
+
 ``` html
+例：http://hogehoge.com/index.php?foo=bar#abc=xyz
+
 <script>
+// { foo:bar, abc:xyz } が取得できる
 var params = sygUrlVars.getAllParams();
-↓
-{ foo:bar, abc:xyz }
 </script>
 ```
 
 ###パラメータ設定（ハッシュのみ）
-http://hogehoge.com/index.php
-↓
-http://hogehoge.com/index.php#foo=bar
 ``` html
 <script>
 sygUrlVars.setHash( 'foo', 'bar' );
+
+// http://hogehoge.com/index.php
+// ↓
+// http://hogehoge.com/index.php#foo=bar
 </script>
 ```
 
