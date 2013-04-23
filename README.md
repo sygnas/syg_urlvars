@@ -1,7 +1,7 @@
 #SygUrlVars - GET / SET Url Parameter 
 
 ##NAME
-jQuery SygRollover
+SygUrlVars
 
 URLパラメータから任意のキーの値を取り出したり、設定したり。
 
